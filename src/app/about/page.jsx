@@ -1,12 +1,10 @@
 "use client";
-import { useRef } from "react";
+
 import { motion,useScroll} from "framer-motion";
 import Image from "next/image";
 
 
 const AboutPage = () => {
-  const ref = useRef();
-  const { scrollYProgress } =  useScroll({ container: ref });
   return (
     <motion.div
       className="h-full w-full"
@@ -14,7 +12,7 @@ const AboutPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div classname="h-full overflow-scroll" ref={ref}>
+      <div classname="h-full overflow-scroll">
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-28 flex flex-row justify-between md:gap-18 lg:gap-24 lg:pr-0 ">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 w-3/6 justify-center">
