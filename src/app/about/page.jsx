@@ -1,6 +1,6 @@
 "use client";
 
-import { motion,useScroll} from "framer-motion";
+import { motion} from "framer-motion";
 import Image from "next/image";
 
 
@@ -28,8 +28,9 @@ const AboutPage = () => {
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic text-white">
-              “If you're waiting until you feel talented enough to make it, you'll never make it.” ― Criss Jami
+              &quot;If you&apos;re waiting until you feel talented enough to make it, you&apos;ll never make it.&quot; ― Criss Jami
             </span>
+
             {/* BIOGRAPHY SCROLL SVG */}
           </div>
           <div className="flex justify-start">
