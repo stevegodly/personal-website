@@ -13,7 +13,7 @@ const TransitionProvider = ({ children }) => {
     <AnimatePresence mode="wait">
       <div
         key={pathName}
-        className="w-screen h-screen bg-cover bg-center"
+        className="top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage:`url(${bgimage.src})`}}
       >
         <motion.div
@@ -36,10 +36,10 @@ const TransitionProvider = ({ children }) => {
           initial={{ height: "140vh" }}
           animate={{ height: "0vh", transition: { delay: 0.5 } }}
         />
-        <div className="h-24">
+        <div className="h-24 relative z-1">
           <Navbar />
         </div>
-        <div className="h-[calc(100vh-6rem)]">{children}</div>
+        <div className="h-[calc(100vh-6rem)] relative z-1">{children}</div>
       </div>
     </AnimatePresence>
   );
