@@ -10,7 +10,7 @@ const Homepage = () => {
   }
 
   const handleWork=()=>{
-    router.push('/portfolio')
+    router.push('/projects')
   }
   const text= "Hello, I am Steve.A software developer based in Kerala"
   const router = useRouter();
